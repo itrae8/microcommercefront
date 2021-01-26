@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste de produits</title>
+    <link th:href="@{/css/main.css}" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="flex-center">
+        <table class="table">
+            <thead class="thead-light">
+            <tr>
+                <th class="text-left">Id</th>
+                <th class="text-left">Nom</th>
+                <th class="text-left">Prix</th>
+            </tr>
+            </thead>
+            <tr th:each="produit: ${listeProduits}">
+                <td th:text="${produit.id}" class="info-produit">Id du produit</td>
+                <td th:text="${produit.nom}" class="info-produit">Nom du produit</td>
+                <td th:text="${produit.prix}" class="info-produit">Prix du produit</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

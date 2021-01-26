@@ -1,0 +1,17 @@
+.info-produit {
+  font-size: 20px;
+}
+
+.text-left{
+  font-size: 30px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+th, td{
+    text-align: center;
+    width: 200px;
+}
